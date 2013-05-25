@@ -1,7 +1,12 @@
+@import "bootstrap";
 
 body {
-  background: url(../images/nasty_fabric.png) #ddd;
+  background: url(nasty_fabric.png) #ddd;
+  font-size: 16px;
+  color: #414242;
 }
+
+.hide { display: none; }
 
 .wrapper {
   width: 600px;
@@ -11,8 +16,29 @@ body {
 .container {
   width: 100%;
   border: 1px solid #ddd;
-  box-shadow: 0 0 10px 1px #bbb;
+  @include box-shadow(0 0 10px 1px #bbb);
   min-height: 500px;
   background-color: #fafafe;
 }
+
+.padding {
+  padding: 20px;
+}
+
+#newTodo {
+  width: calc(100% - 20px); 
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+ul#list {
+  list-style-type: none;
+}
+
+#list li.list-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 5px;
+}
+
+
 

@@ -1,17 +1,31 @@
 <div class="wrapper">
+    
+  <h1>Todo List</h1>
   
-  <div class="padding">
-    
-    <h1>Todo List</h1>
-    
-    <div class="container">
-    
-    
-    
-    
-    
+  <div class="container">
+    <div class="padding">
+  
+      <input id="newTodo" type="text" name="title" placeholder="What do you need to do?" />
+  
+      <ul id="list">
+        <% @items.each do |item| %>
+          <li class="list-item">
+            <h4 class="item-title"><%= item.title %></h4>
+          </tr>
+        <% end %>
+      </ul>
+  
     </div>
+  
   </div>
+  
+</div>
+
+<div class="hide" id="nursery">
+  
+  <li class="list-item">
+    <h4 class="item-title"></h4>
+  </li>
   
   
 </div>
